@@ -11,6 +11,7 @@ public class Test {
         Student student = (Student) applicationContext.getBean("student");
         System.out.println(student);
 
+
         //Student student2 = (Student) applicationContext.getBean(Student.class);
         //System.out.println(student2);
 
@@ -21,5 +22,7 @@ public class Test {
         // constructor with params with index
         Student student4 = (Student) applicationContext.getBean("student4");
         System.out.println(student4);
+
+
     }
 }

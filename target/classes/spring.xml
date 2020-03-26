@@ -12,7 +12,12 @@ http://www.springframework.org/schema/context/spring-context-4.3.xsd
         <property name="id" value="1"></property>
         <property name="name" value="John Doe 1"></property>
         <property name="age" value="22"></property>
-        <property name="address" ref="address"></property> <!-- Direct Injection -->
+        <property name="addresses">
+            <list>
+                <ref bean="address"></ref>
+                <ref bean="address2"></ref>
+            </list>
+        </property> <!-- Direct Injection -->
     </bean>
 
     <bean id="student2" class="com.spring_intro.entity.Student">
@@ -23,18 +28,33 @@ http://www.springframework.org/schema/context/spring-context-4.3.xsd
         <constructor-arg name="id" value="3"></constructor-arg>
         <constructor-arg name="name" value="John Doe 3"></constructor-arg>
         <constructor-arg name="age" value="18"></constructor-arg>
-        <constructor-arg name="address" ref="address"></constructor-arg>
+        <constructor-arg name="addresses">
+            <list>
+                <ref bean="address"></ref>
+                <ref bean="address2"></ref>
+            </list>
+        </constructor-arg> <!-- Direct Injection -->
     </bean>
 
     <bean id="student4" class="com.spring_intro.entity.Student">
         <constructor-arg index="0" value="4"></constructor-arg>
         <constructor-arg index="2" value="18"></constructor-arg>
         <constructor-arg index="1" value="John Doe 4"></constructor-arg>
-        <constructor-arg index="3" ref="address"></constructor-arg>
+        <constructor-arg name="addresses">
+            <list>
+                <ref bean="address"></ref>
+                <ref bean="address2"></ref>
+            </list>
+        </constructor-arg> <!-- Direct Injection -->
     </bean>
 
     <bean id="address" class="com.spring_intro.entity.Address">
         <property name="id" value="1"></property>
         <property name="name" value="Wall St"></property>
+    </bean>
+
+    <bean id="address2" class="com.spring_intro.entity.Address">
+        <property name="id" value="2"></property>
+        <property name="name" value="Union St"></property>
     </bean>
 </beans>
