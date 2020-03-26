@@ -12,4 +12,5 @@ public class Student {
     private String name;
     private int age;
     private Address address; // Direct Injection from Address class
+
 }
