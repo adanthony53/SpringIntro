@@ -18,6 +18,6 @@ public class Test {
         Student student = (Student) applicationContext.getBean("student");
         System.out.println(student);
 
-        //425-626-4050
+
     }
 }
