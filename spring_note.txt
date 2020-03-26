@@ -1,0 +1,10 @@
+Spring
+
+Inversion of Control (IoC) / dependency injection (DI)
+Aspect-Oriented Programming (AOP)
+
+The Spring Framework is divided into modules. Applications can choose which modules they need.
+Let developerss choose different tools
+
+MVC: Struts2, Spring MVC
+ORMapping: Hibernate, MyBatis, Spring Date
