@@ -8,3 +8,13 @@ Let developerss choose different tools
 
 MVC: Struts2, Spring MVC
 ORMapping: Hibernate, MyBatis, Spring Date
+
+scope
+singleton
+prototype
+request
+session
+request and session are only for WEB project
+singleton mode will create object no matter if you create the object or not,
+    it stays there then you use getBean to get it as soon as you called applicaitonContext.
+prototype mode will only create object when you called getBean.
