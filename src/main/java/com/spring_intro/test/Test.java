@@ -48,8 +48,8 @@ public class Test {
 //        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-depends.xml");
 
         // Spring p-namespace
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-p-namespace.xml");
-        Student s = (Student) applicationContext.getBean("student");
-        System.out.println(s);
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-p-namespace.xml");
+//        Student s = (Student) applicationContext.getBean("student");
+//        System.out.println(s);
     }
 }
